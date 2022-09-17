@@ -126,9 +126,9 @@
   <script async="" src="./source/analytics.js.下载"></script><script type="text/javascript" src="./source/c7fa7451-6f95-4815-ac32-b8cc2537837a" data-awssuidacr="IffnDbsT0jJQrTqUgdvX8TrdQvohQhBi"></script><script type="text/javascript" async="" src="./source/taas"></script><script src="./source/js" async=""></script></head>
 
   <body>
-    <audio id="audio">
+    <!-- <audio id="audio" loop>
       <source src="./source/01.mp3" type="audio/mpeg">
-    </audio>
+    </audio> -->
     <!-- Swiper -->
     <!-- <div class="swiper mySwiper swiper-initialized swiper-vertical swiper-pointer-events swiper-backface-hidden">
       <div class="swiper-wrapper" id="swiper-wrapper-9f12091541092329f" aria-live="polite" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
@@ -181,8 +181,26 @@
       //     clickable: true,
       //   },
       // });
-      window.onload = () => {
-        const muics = document.getElementById('audio')
-        muics.play()
-      }
+      // window.onload = () => {
+      //   const muics = document.getElementById('audio')
+      //   muics.play()
+      // }
+
+      function initMusic() {
+            var audio = document.createElement('audio');
+            audio.setAttribute('id', 'audio');
+            audio.setAttribute('autoplay', 'autoplay');
+            audio.setAttribute('loop', 'loop');
+            audio.innerHTML = '<source src="./source/01.mp3" type="audio/mpeg">';
+            document.body.appendChild(audio);
+            audio.load();
+            audio.play();
+            audio.pause();
+            document.addEventListener("WeixinJSBridgeReady", function() {
+                document.getElementById('audio').play();
+            }, false);
+        }
+        window.onload = function() {
+            initMusic();
+        };
     </script>
