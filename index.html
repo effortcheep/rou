@@ -2,7 +2,7 @@
 <!-- saved from url=(0048)https://www.swiper.com.cn/demo/090-vertical.html -->
 <html lang="en" foxified=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>小王烤全羊</title>
+    <title>商丘小王流动上门全羊</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="./source/swiper-bundle.min.css">
@@ -47,7 +47,12 @@
         -ms-flex-align: center;
         -webkit-align-items: center;
         align-items: center;
-        position: relative;
+        /* position: relative; */
+        /* display: flex;
+        flex-direction: column; */
+
+        /* width: 100vw;
+        height: 100vh; */
       }
 
       .swiper-slide img {
@@ -55,20 +60,21 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        flex: 1;
       }
 
       .text-01 {
-        position: absolute;
-        color: white;
-        top: 24px;
-        font-size: 24px;
+        /* position: absolute; */
+        /* color: white; */
+        /* top: 24px; */
+        font-size: 20px;
       }
 
       .text-02 {
-        position: absolute;
-        color: white;
+        /* position: absolute; */
+        /* color: white; */
         /* top: 24px; */
-        font-size: 24px;
+        font-size: 20px;
       }
 
       .phone {
@@ -83,6 +89,15 @@
 
       .video {
         width: 100%;
+        height: 320px;
+        flex: 1;
+      }
+
+      .full {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
       }
     </style>
   <script async="" src="./source/analytics.js.下载"></script><script type="text/javascript" src="./source/c7fa7451-6f95-4815-ac32-b8cc2537837a" data-awssuidacr="IffnDbsT0jJQrTqUgdvX8TrdQvohQhBi"></script><script type="text/javascript" async="" src="./source/taas"></script><script src="./source/js" async=""></script></head>
@@ -92,20 +107,28 @@
     <div class="swiper mySwiper swiper-initialized swiper-vertical swiper-pointer-events swiper-backface-hidden">
       <div class="swiper-wrapper" id="swiper-wrapper-9f12091541092329f" aria-live="polite" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
         <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 9" style="height: 921px;">
-          <image src="./source/01.jpg"></image>
-          <p class="text-01">人生得意须尽欢， 烤只全羊把酒干，一口全羊一口酒，日子越过越有 诗和远方都太远 特色全羊在眼前。</p>
+          <div class="full">
+            <p class="text-01">人生得意须尽欢， 烤只全羊把酒干，一口全羊一口酒，日子越过越有 诗和远方都太远 特色全羊在眼前。</p>
+            <image src="./source/01.jpg"></image>
+          </div>
         </div>
         <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 9" style="height: 921px;">
-          <video class="video" controls src="./source/01.mp4"></video>
-          <p class="text-01">喝一壶好，烤一只全羊，邀三五好友，谈四海生意，品五味人生，算六彩经道，聚八方财运，等你来聚财。</p>
+          <div class="full">
+            <p class="text-01">喝一壶好，烤一只全羊，邀三五好友，谈四海生意，品五味人生，算六彩经道，聚八方财运，等你来聚财。</p>
+            <video class="video" controls src="./source/01.mp4"></video>
+          </div>
         </div>
         <div class="swiper-slide" role="group" aria-label="3 / 9" style="height: 921px;">
-          <image src="./source/02.jpg"></image>
-          <p class="text-01">色泽黄红、油亮，皮脆肉嫩，肥而不腻，酥香可口，别具风味。</p>
+          <div class="full">
+            <p class="text-01">色泽黄红、油亮，皮脆肉嫩，肥而不腻，酥香可口，别具风味。</p>
+            <image src="./source/02.jpg"></image>
+          </div>
         </div>
         <div class="swiper-slide" role="group" aria-label="4 / 9" style="height: 921px;">
-          <image src="./source/03.jpg"></image>
-          <p class="text-02">采用本地小山羊 鲜羊烤制 适合好友小聚 家庭聚会 公司聚餐 生日宴会 团建等活动  商丘市方圆一百公里 你在哪吃我去哪烤  你几点吃小羊几点好。</p>
+          <div class="full">
+            <p class="text-02">采用本地小山羊 鲜羊烤制 适合好友小聚 家庭聚会 公司聚餐 生日宴会 团建等活动  商丘市方圆一百公里 你在哪吃我去哪烤  你几点吃小羊几点好。</p>
+            <image src="./source/03.jpg"></image>
+          </div>
         </div>
         <div class="swiper-slide" role="group" aria-label="5 / 9" style="height: 921px;">
           <div style="padding-bottom: 30px">
